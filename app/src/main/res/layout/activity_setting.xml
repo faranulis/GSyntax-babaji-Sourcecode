@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="31dp"
+        android:text="G Syntax" />
+
+    <Switch
+        android:id="@+id/safemode"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="106dp"
+        android:background="#32a852"
+        android:padding="7dp"
+        android:text="Safe Mode"
+        android:textColor="#ffff"
+        android:textOff="Safe Mode Off" />
+
+    <Switch
+        android:id="@+id/forcerungame"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="162dp"
+        android:background="#32a852"
+        android:padding="7dp"
+        android:text="Force Without Instalation"
+        android:textColor="#ffff"
+        android:textSize="12dp"
+        android:textOff="Safe Mode Off" />
+
+    <Button
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="277dp"
+        android:background="#FF9800"
+        android:onClick="checkUpdate"
+        android:padding="7dp"
+        android:text="Check For New Update"
+        android:textColor="#ffff"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="221dp"
+        android:background="#FF0000"
+        android:drawableLeft="@drawable/ic_restore_black_24dp"
+        android:onClick="checkUpdate"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="Set As Default"
+        android:textColor="#ffff"
+        android:textSize="12dp" />
+
+</RelativeLayout>

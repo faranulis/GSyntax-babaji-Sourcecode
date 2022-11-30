@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="31dp"
+        android:text="ODPaks Features" />
+
+    <Button
+        android:id="@+id/backupodpaks"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="19dp"
+        android:background="#70a1ff"
+        android:drawableLeft="@drawable/ic_restore_black_24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="backupodpaks"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="backup"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/deletekodpack"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="19dp"
+        android:background="#ee5253"
+        android:drawableLeft="@drawable/ic_remove_circle_black_24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="deletekodpack"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="Delete ODPaks"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+    <Button
+        android:id="@+id/restoreodpaks"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="19dp"
+        android:background="#70a1ff"
+        android:drawableLeft="@drawable/ic_restore_black_24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="restoreodpaks"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="Restore"
+        android:textColor="#fff"
+        android:textSize="10dp" />
+
+</RelativeLayout>

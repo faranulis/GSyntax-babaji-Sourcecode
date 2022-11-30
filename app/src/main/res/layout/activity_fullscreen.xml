@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:foregroundGravity=""
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="11dp"
+            android:text="G Syntax"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/info"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle4"
+                    android:onClick="info"
+                    android:text="Info"
+                    android:drawableLeft="@drawable/ic_info_black_24dp"
+                    android:textColor="#fff"
+
+                    android:paddingLeft="4dp"
+                    android:textSize="11dp" />
+
+                <Spinner
+                    android:id="@+id/simpleSpinner"
+                    android:layout_width="85dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle4" />
+
+                <Button
+                    android:id="@+id/saveid"
+                    android:layout_width="85dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle3"
+                    android:onClick="buttonSave"
+                    android:layout_marginTop="3dp"
+                    android:text="Run"
+                    android:paddingLeft="4dp"
+                    android:drawableLeft="@drawable/ic_save_black_24dp"
+                    android:textColor="#fff"
+                    android:textSize="11dp" />
+
+
+                <Button
+                    android:id="@+id/instalasi"
+                    android:layout_width="85dp"
+                    android:text="Instalation"
+                    android:textSize="7dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:drawableLeft="@drawable/ic_code_black_24dp"
+                    android:onClick="selectSav"
+                    android:paddingLeft="4dp"
+                    android:textColor="#fff"/>
+                <Button
+                    android:id="@+id/select_Config"
+                    android:layout_width="85dp"
+                    android:text="Config"
+                    android:textSize="11dp"
+                    android:textColor="#fff"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/circle5"
+                    android:drawableLeft="@drawable/ic_file_upload_black_24dp"
+                    android:onClick="selectRaw"
+                    android:paddingLeft="4dp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/infostatus2"
+                        android:layout_width="85dp"
+                        android:text="Status2"
+                        android:textSize="11dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/circle2"
+                        android:drawableLeft="@drawable/ic_info_black_24dp"
+                        android:onClick="infostatus2"
+                        android:paddingLeft="4dp"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/infostatus"
+                        android:layout_width="85dp"
+                        android:text="Status"
+                        android:textSize="11dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/circle4"
+                        android:drawableLeft="@drawable/ic_info_black_24dp"
+                        android:onClick="infostatus"
+                        android:paddingLeft="4dp"
+                        android:textColor="#fff" />
+
+                    <Button
+                        android:id="@+id/infostatus3"
+                        android:layout_width="85dp"
+                        android:text="Status3"
+                        android:textSize="11dp"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/circle3"
+                        android:drawableLeft="@drawable/ic_web_asset_black_24dp"
+                        android:onClick="infostatus3"
+                        android:paddingLeft="4dp"
+                        android:textColor="#fff" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/sound"
+                    android:layout_width="85dp"
+                    android:text="Sound"
+                    android:textSize="11dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle6"
+                    android:drawableLeft="@drawable/ic_music_note_black_24dp"
+                    android:onClick="info"
+                    android:paddingLeft="4dp"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/remove"
+                    android:layout_width="85dp"
+                    android:text="Remove"
+                    android:textSize="11dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/circle3"
+                    android:drawableLeft="@drawable/ic_delete_black_24dp"
+                    android:onClick="info"
+                    android:paddingLeft="4dp"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:layout_width="85dp"
+                    android:text="Setting"
+                    android:textSize="11dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle7"
+                    android:drawableLeft="@drawable/ic_settings_black_24dp"
+                    android:onClick="setting"
+                    android:paddingLeft="4dp"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="#181818" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayerInfo"
+        android:layout_marginLeft="62dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID2"
+            android:layout_width="202dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="76dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/SConfig"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Not Selected"
+                android:textColor="#ffff00"
+                android:textSize="13dp" />
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="202dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="102dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/SSav"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Not Selected"
+                android:textColor="#ffff00"
+                android:textSize="13dp" />
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID3"
+            android:layout_width="168dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="122dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/SGus"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Not Selected"
+                android:textColor="#ffff00"
+                android:textSize="13dp" />
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID4"
+            android:layout_width="202dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="143dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/SPaks"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Not Selected"
+                android:textColor="#ffff00"
+                android:textSize="13dp" />
+        </ScrollView>
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID5"
+            android:layout_width="202dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="166dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/SRaw"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="Not Selected"
+                android:textColor="#ffff00"
+                android:textSize="13dp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/modeconfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="75dp"
+            android:text="Mode Config : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/statusConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="77dp"
+            android:text="Not Selected"
+            android:textColor="#ffff00"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="99dp"
+            android:text="Active.sav : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/statusSav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="103dp"
+            android:text="Not Selected"
+            android:textColor="#ffff00"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="122dp"
+            android:text="GameUserSettings : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/statusGU"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="184dp"
+            android:layout_marginTop="123dp"
+            android:text="Default"
+            android:textColor="#ffff00"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="143dp"
+            android:text="Game Paks : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/gamepatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="144dp"
+            android:text="Default"
+            android:textColor="#ffff00"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="165dp"
+            android:text="Rawdata : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/rawstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="167dp"
+            android:text="Default"
+            android:textColor="#ffff00"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="188dp"
+            android:text="Ultra File Name : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/Ultra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginTop="190dp"
+            android:text="No Internet"
+            android:textColor="#FF0000"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="211dp"
+            android:text="UserEngine : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/Userengine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="213dp"
+            android:text="No Selected"
+            android:textColor="#FFFF00"
+            android:textSize="13dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="232dp"
+            android:text="UserGame : "
+            android:textColor="#fff"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/UserGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginTop="235dp"
+            android:text="No Selected"
+            android:textColor="#FFFF00"
+            android:textSize="13dp" />
+
+        <ProgressBar
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="323dp"
+            android:layout_marginTop="184dp"
+            android:layout_marginEnd="298dp"
+            android:layout_marginBottom="179dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/statusinstalasi"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:text="*Instalasi Not Installed" />
+
+    <WebView
+        android:id="@+id/Utama"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"></WebView>
+
+
+</RelativeLayout>

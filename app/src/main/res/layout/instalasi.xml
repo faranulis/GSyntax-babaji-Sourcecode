@@ -1,0 +1,95 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = "com.gsyntax.albasyir.Instalasi"
+    android:orientation = "horizontal">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="31dp"
+        android:text="G Syntax - Instalasi" />
+
+    <Button
+        android:id="@+id/hint"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="86dp"
+        android:background="#70a1ff"
+        android:drawableLeft="@drawable/ic_info_black_24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="hint"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="How To Use"
+        android:textColor="#fff"
+        android:textSize="10dp"
+        tools:ignore="OnClick" />
+    <Spinner
+        android:id="@+id/simpleSpinner"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="21dp"
+        android:drawSelectorOnTop="true" />
+    <ScrollView
+        android:id="@+id/SCROLLER_ID2"
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="169dp"
+        android:scrollbars="vertical">
+
+        <EditText
+            android:id="@+id/enterText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Please enter text here" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="25dp"
+        android:background="#36D670"
+        android:drawableLeft="@drawable/ic_save_black_24dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="saveawal"
+        android:paddingLeft="20dp"
+        android:paddingRight="40dp"
+        android:text="Save"
+        android:textColor="#fff"
+        android:textSize="10dp"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
